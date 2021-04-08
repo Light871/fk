@@ -1,24 +1,22 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The best world flashcards' manage app!
 
-Things you may want to cover:
+System requirements:
 
-* Ruby version
+Ruby (2.7.0+)
 
-* System dependencies
+Rails (6.0.3.4+)
 
-* Configuration
+Bundler (2.1.2+)
 
-* Database creation
+PostgeSQL (13.1+)
 
-* Database initialization
 
-* How to run the test suite
+You need to run 
 
-* Services (job queues, cache servers, search engines, etc.)
+$ bundle install
 
-* Deployment instructions
+$ rake db:setup to configure your databases
 
-* ...
+$ rake db:migrate
