@@ -1,2 +1,3 @@
-%h1 Cards#index
-%p Find me in app/views/cards/index.html.haml
+%ul
+	- @cards.each do |card|
+		%li=link_to "#{card.original_text}", card_path(card)
