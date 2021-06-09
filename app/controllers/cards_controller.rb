@@ -3,6 +3,9 @@ class CardsController < ApplicationController
     @cards = Card.all
   end
 
+  def new
+  end
+
   private
 
   def card_params
