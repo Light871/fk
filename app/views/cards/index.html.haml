@@ -1,5 +1,5 @@
 %ul
-	- @cards.each do |card|
+  - @cards.each do |card|
     %li
       = link_to "#{card.original_text}", card_path(card)
       , last review: #{card.review_date}
