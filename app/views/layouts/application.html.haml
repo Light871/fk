@@ -15,6 +15,6 @@
           %li
             = link_to "#{t :all_cards}", cards_path
           %li
-            %a{:href => "#"}=t :add_card
+            = link_to "#{t :add_card}", new_card_path
       %section
         = yield
