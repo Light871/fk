@@ -2,4 +2,5 @@
   - @cards.each do |card|
     %li
       = link_to "#{card.original_text}", card_path(card)
-      , last review: #{card.review_date}
+      = link_to 'Edit', edit_card_path(card)
+      = link_to 'Delete', card_path(card), method: :delete
