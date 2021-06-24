@@ -1,0 +1,8 @@
+%h1= t :new_card
+
+= form_for :card, url: cards_path do |f|
+  = f.label :original_text
+  = f.text_field :original_text
+  = f.label :translated_text
+  = f.text_field :translated_text
+  = f.button :submit
