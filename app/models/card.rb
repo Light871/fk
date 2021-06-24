@@ -4,7 +4,7 @@ class Card < ApplicationRecord
 
   validate :original_text_cannot_be_equal_to_translated_text
 
-  before_save do
+  before_create do
     self.review_date = Date.today + 3
   end
 
