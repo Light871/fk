@@ -1,8 +1,6 @@
 %h1= t :new_card
 
-= form_for :card, url: card_path(@card), method: :put do |f|
-  = f.label :original_text
-  = f.text_field :original_text
-  = f.label :translated_text
-  = f.text_field :translated_text
+= simple_form_for @card, :url => { :action => "update" } do |f|
+  = f.input :original_text
+  = f.input :translated_text
   = f.button :submit
